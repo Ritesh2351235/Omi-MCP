@@ -4,7 +4,7 @@ This is a Model Context Protocol (MCP) server that provides access to Omi memori
 
 ## Features
 
-- Tool to fetch all memories for the specified user ID (ALX0HDv53IenBBiUJhy1TrOy6r22)
+- Tool to fetch all memories for the specified user ID from the OMI App
 
 ## Setup
 
@@ -12,13 +12,16 @@ This is a Model Context Protocol (MCP) server that provides access to Omi memori
 ```bash
 npm install
 ```
+2. Configure your user ID:
+   - Open `src/server.ts`
+   - Update the `SPECIFIC_USER_ID` constant with your user ID from the Account section of the Omira App
 
-2. Build the TypeScript code:
+3. Build the TypeScript code:
 ```bash
 npm run build
 ```
 
-3. Start the server:
+1. Start the server:
 ```bash
 npm start
 ```
@@ -85,3 +88,26 @@ To integrate with Claude Desktop, update your Claude Desktop configuration (`cla
     }
   }
 } 
+
+## Cursor IDE Integration
+
+To integrate with Cursor IDE:
+
+1. Open Cursor IDE settings
+2. Navigate to "AI & Copilot" settings
+3. Under "Model Context Protocol", add a new MCP server with these settings:
+```json
+{
+  "name": "Omi Memories",
+  "command": "node",
+  "args": [
+    "/path/to/your/mcp-server/dist/server.js"
+  ],
+  "cwd": "/path/to/your/mcp-server",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
+```
+
+Replace `/path/to/your/mcp-server` with the actual path to your MCP server installation directory.
