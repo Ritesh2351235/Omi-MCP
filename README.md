@@ -31,8 +31,6 @@ npm start
 ### fetch-memories
 Fetches all memories for the configured user ID.
 
-Example usage with MCP Client:
-
 ```typescript
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
@@ -88,7 +86,7 @@ To integrate with Claude Desktop, update your Claude Desktop configuration (`cla
     }
   }
 } 
-
+```
 ## Cursor IDE Integration
 
 To integrate with Cursor IDE:
