@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/mseep-audited.png)](https://mseep.ai/app/ritesh2351235-omi-mcp)
+
 # Omi Memories MCP Server
 
 This is a Model Context Protocol (MCP) server that provides access to Omi memories for a specific user through a tool interface.
